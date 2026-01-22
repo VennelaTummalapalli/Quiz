@@ -1,0 +1,119 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  padding: 40px 0;
+}
+
+.quiz-container {
+  width: 65%;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* TIMER */
+#timer {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #e63946;
+  background: #ffecec;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+/* QUESTION CARD */
+.question {
+  background: #f8f9fa;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border-left: 6px solid #667eea;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.question:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.question p {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* OPTIONS */
+.question label {
+  display: block;
+  padding: 8px 10px;
+  margin: 6px 0;
+  background: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  transition: background 0.2s, border 0.2s;
+}
+
+.question label:hover {
+  background: #eef2ff;
+  border-color: #667eea;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* ✅ CORRECT & WRONG ANSWER COLORS */
+.question label.correct {
+  background-color: #d4edda !important;
+  border: 2px solid #28a745 !important;
+  color: #155724;
+}
+
+.question label.wrong {
+  background-color: #f8d7da !important;
+  border: 2px solid #dc3545 !important;
+  color: #721c24;
+}
+
+/* SUBMIT BUTTON */
+button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* RESULT */
+#result {
+  margin-top: 30px;
+  padding: 20px;
+  background: #e9f7ef;
+  color: #2d6a4f;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 12px;
+}

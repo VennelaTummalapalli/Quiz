@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<div class="quiz-container">
+  <h1>Online Quiz</h1>
+  
+   <div id="timer">Time Left: 15:00</div>
+
+  <form id="quizForm">
+
+    <div class="question">
+      <p>1. What does HTML stand for?</p>
+      <label><input type="radio" name="q1" value="0"> Hyper Text Markup Language</label>
+      <label><input type="radio" name="q1" value="1"> High Text Machine Language</label>
+      <label><input type="radio" name="q1" value="2"> Hyperlinks Markup Text</label>
+    </div>
+
+    <div class="question">
+      <p>2. JavaScript is a programming language.</p>
+      <label><input type="radio" name="q2" value="0"> True</label>
+      <label><input type="radio" name="q2" value="1"> False</label>
+    </div>
+
+     <div class="question">
+      <p>3. Which tag is used to create a hyperlink?</p>
+      <label><input type="radio" name="q3" value="0"> &lt;link&gt;</label>
+      <label><input type="radio" name="q3" value="1"> &lt;a&gt;</label>
+      <label><input type="radio" name="q3" value="2"> &lt;href&gt;</label>
+    </div>
+
+    <div class="question">
+      <p>4. CSS is used for?</p>
+      <label><input type="radio" name="q4" value="0"> Structure</label>
+      <label><input type="radio" name="q4" value="1"> Styling</label>
+      <label><input type="radio" name="q4" value="2"> Logic</label>
+    </div>
+
+    <div class="question">
+      <p>5. HTML is case sensitive.</p>
+      <label><input type="radio" name="q5" value="0"> True</label>
+      <label><input type="radio" name="q5" value="1"> False</label>
+    </div>
+
+    <div class="question">
+      <p>6. CSS stands for?</p>
+      <label><input type="radio" name="q6" value="0"> Creative Style Sheet</label>
+      <label><input type="radio" name="q6" value="1"> Cascading Style Sheets</label>
+      <label><input type="radio" name="q6" value="2"> Computer Style Sheet</label>
+    </div>
+
+      <div class="question">
+    <p>7. Which language is used to style web pages?</p>
+    <label><input type="radio" name="q7" value="0"> HTML</label>
+    <label><input type="radio" name="q7" value="1"> CSS</label>
+    <label><input type="radio" name="q7" value="2"> Java</label>
+  </div>
+
+  <div class="question">
+    <p>8. Which symbol is used for comments in JavaScript?</p>
+    <label><input type="radio" name="q8" value="0"> &lt;!-- --&gt;</label>
+    <label><input type="radio" name="q8" value="1"> //</label>
+    <label><input type="radio" name="q8" value="2"> #</label>
+  </div>
+
+  <div class="question">
+    <p>9. Which HTML tag is used to insert an image?</p>
+    <label><input type="radio" name="q9" value="0"> &lt;image&gt;</label>
+    <label><input type="radio" name="q9" value="1"> &lt;img&gt;</label>
+    <label><input type="radio" name="q9" value="2"> &lt;pic&gt;</label>
+  </div>
+
+  <div class="question">
+    <p>10. JavaScript is mainly used for?</p>
+    <label><input type="radio" name="q10" value="0"> Styling</label>
+    <label><input type="radio" name="q10" value="0"> Structure</label>
+    <label><input type="radio" name="q10" value="2"> Logic & interactivity</label>
+  </div>
+
+  <div class="question">
+    <p>11. Which tag is used for the largest heading?</p>
+    <label><input type="radio" name="q11" value="0"> &lt;h6&gt;</label>
+    <label><input type="radio" name="q11" value="0"> &lt;h3&gt;</label>
+    <label><input type="radio" name="q11" value="2"> &lt;h1&gt;</label>
+  </div>
+
+  <div class="question">
+    <p>12. CSS files have which extension?</p>
+    <label><input type="radio" name="q12" value="0"> .html</label>
+    <label><input type="radio" name="q12" value="0"> .js</label>
+    <label><input type="radio" name="q12" value="2"> .css</label>
+  </div>
+
+  <div class="question">
+    <p>13. Which HTML tag is used to create a button?</p>
+    <label><input type="radio" name="q13" value="0"> &lt;input&gt;</label>
+    <label><input type="radio" name="q13" value="1"> &lt;button&gt;</label>
+    <label><input type="radio" name="q13" value="2"> &lt;click&gt;</label>
+  </div>
+
+  <div class="question">
+    <p>14. JavaScript code is written inside which tag?</p>
+    <label><input type="radio" name="q14" value="0"> &lt;css&gt;</label>
+    <label><input type="radio" name="q14" value="1"> &lt;script&gt;</label>
+    <label><input type="radio" name="q14" value="2"> &lt;js&gt;</label>
+  </div>
+
+  <div class="question">
+    <p>15. Which attribute gives extra information about an HTML element?</p>
+    <label><input type="radio" name="q15" value="0"> class</label>
+    <label><input type="radio" name="q15" value="0"> id</label>
+    <label><input type="radio" name="q15" value="2"> Both A and B</label>
+  </div>
+
+    <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+
+  </form>
+
+  <div id="result"></div>
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
